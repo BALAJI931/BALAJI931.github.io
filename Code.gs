@@ -6,7 +6,7 @@ function doGet(e) {
   var ss = SpreadsheetApp.openByUrl(sheetURL);
   var ws = ss.getSheetByName("data");
 
-  var tmp = HtmlService.createTemplateFromFile("page");
+  var tmp = HtmlService.createTemplateFromFile("index");
   return tmp.evaluate().setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
    
 }
